@@ -1,0 +1,20 @@
+@page "/Calculator"
+
+<h3>Calculator in Project</h3> 
+
+<ul>
+    @foreach (var Calc in calculator)
+    {
+        @Calc.angka1
+    }
+</ul>
+
+<table class="border">
+Masukan Angka : <input placeholder="0" @bind="newInput1" />
+<br>
+masukan Angka : <input placeholder="0" @bind="newInput2" />
+<br>
+Hasil : 
+<br><br>
+<button @onclick="hitung">Hitung</button>
+</table>
